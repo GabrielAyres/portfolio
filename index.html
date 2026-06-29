@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabriel Ferreira — Portfólio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Fonte do Google Fonts, usei Inter porque fica bem limpa -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+</head>
+<body class="tema-claro">
+
+  <!-- ========== HEADER / MENU DE NAVEGAÇÃO ========== -->
+  <header id="topo">
+    <nav class="navbar" role="navigation" aria-label="Menu principal">
+      <div class="nav-logo">
+        <!-- Initials do meu nome como logo, simples e direto -->
+        <span class="logo-text">GF</span>
+      </div>
+
+      <!-- Botão hamburguer para mobile -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#sobre" class="nav-item">Sobre mim</a></li>
+        <li><a href="#formacao" class="nav-item">Formação</a></li>
+        <li><a href="#portfolio" class="nav-item">Portfólio</a></li>
+        <li><a href="#contato" class="nav-item">Contato</a></li>
+        
+        <li>
+          <button class="btn-tema" id="btnTema" aria-label="Alternar tema">
+            🌙
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ========== SEÇÃO HERO / SOBRE MIM ========== -->
+  <section id="sobre" class="secao secao-sobre">
+    <div class="container">
+      <div class="sobre-grid">
+      
+        <div class="avatar-wrap">
+          <div class="avatar">
+            <span>GF</span>
+          </div>
+          <div class="avatar-badge">Disponível p/ freelas</div>
+        </div>
+
+        <div class="sobre-texto">
+          <p class="eyebrow">Olá, eu sou</p>
+          <h1 class="nome">Gabriel <br />Ferreira</h1>
+          <p class="cargo">Desenvolvedor Web em formação · Apaixonado por tecnologia</p>
+
+          <p class="bio">
+            Tenho 25 anos e moro em Guaiba, RS. Estou no terceiro semestre de
+            Análise e Desenvolvimento de Sistemas na UNINTER e já estou colocando a mão
+            na massa com projetos reais. Aprendo rápido, sou curioso por natureza e adoro
+            descobrir como as coisas funcionam por baixo do capô.
+          </p>
+
+          <p class="bio">
+            Fora do computador,jogo xadrez nas
+            tardes de domingo. Também
+            gosto muito de video games quando o tempo deixa.
+          </p>
+
+          <!-- Links de contato rápido -->
+          <div class="sobre-links">
+            <a href="https://github.com/GabrielAyres" target="_blank" rel="noopener" class="btn-outline">
+              GitHub
+            </a>
+            <a href="#contato" class="btn-primario">Falar comigo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SEÇÃO FORMAÇÃO ========== -->
+  <section id="formacao" class="secao secao-formacao">
+    <div class="container">
+      <h2 class="titulo-secao">Formação</h2>
+      <p class="subtitulo-secao">De onde vim e pra onde estou indo</p>
+
+      <!-- Formação educacional -->
+      <div class="formacao-bloco">
+        <h3 class="formacao-categoria">Educação</h3>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-conteudo">
+              <span class="timeline-data">2024 — Atual</span>
+              <h4>Tecnologia em Análise e Desenvolvimento de Sistemas</h4>
+              <p class="instituicao">UNINTER — Centro Universitário Internacional</p>
+              <p>Cursando o 3º semestre. Matérias favoritas até agora: Fundamentos de Programação Web e Banco de Dados.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-conteudo">
+              <span class="timeline-data">2016 — 2018</span>
+              <h4>Ensino Médio com ênfase em Informática</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Idiomas -->
+      <div class="formacao-bloco">
+        <h3 class="formacao-categoria">Idiomas</h3>
+
+        <div class="idiomas-lista">
+          <!-- Barra de progresso feita com CSS mesmo, sem JS aqui -->
+          <div class="idioma-item">
+            <div class="idioma-info">
+              <span>Português</span>
+              <span>Nativo</span>
+            </div>
+            <div class="barra-fundo">
+              <div class="barra-progresso" style="width: 100%;"></div>
+            </div>
+          </div>
+
+          <div class="idioma-item">
+            <div class="idioma-info">
+              <span>Inglês</span>
+              <span>Intermediário (B1)</span>
+            </div>
+            <div class="barra-fundo">
+              <div class="barra-progresso" style="width: 60%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Habilidades técnicas -->
+      <div class="formacao-bloco">
+        <h3 class="formacao-categoria">Habilidades Técnicas</h3>
+        <div class="skills-wrap">
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">GitHub</span>
+          <span class="skill-tag">Python (básico)</span>
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">Linux</span>
+        </div>
+      </div>
+    </div>
+  </section>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SEÇÃO CONTATO ========== -->
+  <section id="contato" class="secao secao-contato">
+    <div class="container">
+      <h2 class="titulo-secao">Contato</h2>
+      <p class="subtitulo-secao">Me manda uma mensagem, respondo rápido</p>
+
+      <div class="contato-grid">
+
+        <!-- Informações de contato -->
+        <div class="contato-info">
+          <div class="info-item">
+            <span class="info-icone">📍</span>
+            <div>
+              <strong>Localização</strong>
+              <p>Guaiba, RS — Brasil</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icone">📧</span>
+            <div>
+              <strong>E-mail</strong>
+              <p>gabrielferreira@email.com</p>
+            </div>
+          </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icone">🐱</span>
+            <div>
+              <strong>GitHub</strong>
+              <p>https://github.com/GabrielAyres</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulário de contato com validação em JavaScript -->
+        <div class="form-wrap">
+          <form id="formContato" novalidate>
+            <!-- Campo nome -->
+            <div class="campo-grupo">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome" autocomplete="name" />
+              <span class="erro-msg" id="erroNome"></span>
+            </div>
+
+            <!-- Campo e-mail -->
+            <div class="campo-grupo">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" autocomplete="email" />
+              <span class="erro-msg" id="erroEmail"></span>
+            </div>
+
+            <!-- Campo mensagem -->
+            <div class="campo-grupo">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreve aí..."></textarea>
+              <span class="erro-msg" id="erroMensagem"></span>
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar mensagem</button>
+          </form>
+
+          <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-hidden="true">
+            <div class="modal-box">
+              <div class="modal-icone">✅</div>
+              <h3>Mensagem enviada!</h3>
+              <p>Obrigado pelo contato. Vou te responder em breve.</p>
+              <button class="btn-fechar-modal" id="btnFecharModal">Fechar</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="rodape">
+    <
+  </footer>
+
+  <!-- Script JavaScript -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
